@@ -17,3 +17,15 @@ magic unfold::
     <p>i ♥ <i class="fa fa-coffee"></i></p>
 
 Don't forget to make the Font Awesome assets available to your DOM!
+
+
+Installation
+------------
+
+    pip install git+git://github.com/aleray/mdx_del_ins.git
+
+
+Dependencies
+------------
+
+* [Markdown 2.0+](http://www.freewisdom.org/projects/python-markdown/)
