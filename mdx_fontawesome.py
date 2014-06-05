@@ -1,3 +1,6 @@
+#! /usr/bin/env python
+
+import markdown
 from markdown.extensions import Extension
 from markdown.inlinepatterns import Pattern
 from markdown.util import etree
@@ -16,3 +19,11 @@ class FontAwesomeExtension(Extension):
     def extendMarkdown(self, md, md_globals):
         fontawesome = FontAwesomePattern(fontawesome_pattern)
         md.inlinePatterns.add('fontawesome', fontawesome, '<reference')
+
+def makeExtension(configs={}):
+    return FontAwesomeExtension(configs=dict(configs))
+
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
